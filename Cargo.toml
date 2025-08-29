@@ -3,9 +3,9 @@ members = ["crates/*", "datasources/*", "decoders/*", "examples/*", "metrics/*"]
 resolver = "2"
 
 [workspace.package]
-rust-version = "1.82"
+rust-version = "1.89"
 version = "0.9.1"
-edition = "2021"
+edition = "2024"
 license = "MIT"
 repository = "https://github.com/sevenlabs-hq/carbon"
 
@@ -115,7 +115,7 @@ flate2 = "1.0.35"
 futures = "0.3.30"
 futures-util = "0.3.31"
 heck = "0.5.0"
-helius = { version = "0.2.6", git = "https://github.com/helius-labs/helius-rust-sdk.git" }
+helius = { version = "0.3.0", git = "https://github.com/ZhengYuTay/helius-rust-sdk.git" }
 hex = "0.4.3"
 indicatif = "0.17.8"
 inquire = "0.7.5"
@@ -140,23 +140,23 @@ sha2 = "0.10.8"
 
 # solana
 solana-account = "~2.2"
-solana-account-decoder = "~2.2"
-solana-account-decoder-client-types = "~2.2"
-solana-client = "~2.2"
+solana-account-decoder = "~2.3"
+solana-account-decoder-client-types = "~2.3"
+solana-client = "~2.3"
 solana-clock = "~2.2"
 solana-commitment-config = "~2.2"
-solana-entry = "~2.2"
-solana-hash = "~2.2"
-solana-instruction = { version = "~2.2", default-features = false }
-solana-message = "~2.2"
-solana-native-token = "~2.2"
-solana-program = "~2.2"
+solana-entry = "~2.3"
+solana-hash = "~2.3"
+solana-instruction = { version = "~2.3", default-features = false }
+solana-message = "~2.4"
+solana-native-token = "~2.3"
+solana-program = "~2.3"
 solana-program-pack = "~2.2"
-solana-pubkey = { version = "~2.2", features = ["serde", "borsh", "curve25519"] }
-solana-signature = { version = "~2.2", features = ["rand"] }
+solana-pubkey = { version = "~2.4", features = ["serde", "borsh", "curve25519"] }
+solana-signature = { version = "~2.3", features = ["rand"] }
 solana-transaction = "~2.2"
-solana-transaction-context = "~2.2"
-solana-transaction-status = "~2.2"
+solana-transaction-context = "~2.3"
+solana-transaction-status = "~2.3"
 spl-memo = "5.0.0"
 spl-token = "6.0.0"
 sqlx = { version = "0.8.5", features = [
@@ -177,8 +177,8 @@ tonic = { version = "0.10", features = ["tls", "tls-roots", "tls-webpki-roots"] 
 tonic-build = "0.10"
 unicode-xid = "0.2"
 uuid = { version = "1.6.1", features = ["serde", "v7"] }
-yellowstone-grpc-client = { version = "6.0.0" }
-yellowstone-grpc-proto = { version = "6.0.0" }
+yellowstone-grpc-client = { git = "https://github.com/rpcpool/yellowstone-grpc" }
+yellowstone-grpc-proto = { git = "https://github.com/rpcpool/yellowstone-grpc" }
 
 [patch.crates-io.curve25519-dalek]
 git = "https://github.com/anza-xyz/curve25519-dalek.git"
